@@ -1,0 +1,9 @@
+# !usr/bin/env bash
+
+
+counter="0"
+
+while sleep 1s; do
+  [[ "$counter" -eq "60" ]] && echo "Acabou o tempo" || let counter++
+done
+```
